@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Control</title>
+    <link rel="stylesheet" href="styleskonweb.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Duru+Sans&family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>SMART HOME CONTROL</h1>
+        <div id="fan-light-control">
+            <h2>Appliance Control</h2>
+            <div class="control-group">
+                <label for="fan-speed"><img src="fan img.png">Fan Speed:</label>
+                <select id="fan-speed">
+                    <option value="off">Off</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="light-toggle"><img src="LEDimg.png">Light:</label>
+                <input type="checkbox" id="light-toggle">
+            </div>
+            <div class="control-group">
+                <label for="AC-temp"><img src="ACimg.png">AC Temperature:</label>
+                <input type="number" placeholder="Enter temperature">
+            </div>
+            <div class="control-group">
+                <label for="TV-Remote"><img src="tvimg.png">TV Remote:</label>
+                <input type="checkbox" id="light-toggle">
+            <button id="apply-changes-btn">Apply Changes</button>
+        </div>
+    </div>
+
+    <script src="scriptkonweb.js"></script>
+</body>
+</html>
